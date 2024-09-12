@@ -21,3 +21,4 @@ Route::post('/contacto', [ContactoController::class, 'send']);
 Route::get('/contactado', [ContactoController::class, 'contacted'])->name('contactado');
 
 
+
