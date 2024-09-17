@@ -1,0 +1,50 @@
+[33mcommit 4c2de847aea9c7c59334dcffb83f8972694830d0[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32m003-mailer[m[33m)[m
+Author: Samuel Beteta <sbeteta78@gmail.com>
+Date:   Tue Sep 17 16:08:44 2024 -0600
+
+    2024-09-06 - Clase 19 - Localization y Correos en Laravel
+
+[33mcommit d070ec9d549fd713f8a2453985e5167efb0b8c90[m[33m ([m[1;31morigin/003-mailer[m[33m)[m
+Author: Samuel Beteta <sbeteta78@gmail.com>
+Date:   Wed Sep 11 21:46:12 2024 -0600
+
+    agregado mailer
+
+[33mcommit 09c781da5c151af90d12fa371ca515a7bafe675c[m[33m ([m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m, [m[1;32mmain[m[33m)[m
+Merge: 3491fc4 b2b9402
+Author: progra-4-2024 <progra-4-2024@incodemode.com>
+Date:   Fri Aug 30 09:10:29 2024 -0600
+
+    Merge pull request #1 from progra-4-2024/001-primerBranch
+    
+    quitado parrafo
+
+[33mcommit b2b940259f5f2cbce031cb087f91b4055acbfbf1[m
+Author: Luis Deleon <lmdbluis@gmail.com>
+Date:   Fri Aug 30 09:08:35 2024 -0600
+
+    quitado parrafo
+
+[33mcommit 3491fc4bcf728c5b99a3b11fdc777c3703518364[m
+Author: Luis Deleon <lmdbluis@gmail.com>
+Date:   Fri Aug 30 09:05:35 2024 -0600
+
+    agregado mensaje
+
+[33mcommit 097f068a453b8b3e75b808274342472347b977e3[m
+Author: progra-4-2024 <progra-4-2024@incodemode.com>
+Date:   Fri Aug 30 08:52:40 2024 -0600
+
+    Update contactado.blade.php agregado vip
+
+[33mcommit d1b24499d8f2eec7c216dbc502c56f5e3bc7314d[m
+Author: Luis Deleon <lmdbluis@gmail.com>
+Date:   Fri Aug 30 08:49:53 2024 -0600
+
+    agregue un rocket y mensaje
+
+[33mcommit b2c0a0cd9236b484073dab32a75e1f37f977ae5a[m
+Author: Luis Deleon <lmdbluis@gmail.com>
+Date:   Fri Aug 30 08:32:35 2024 -0600
+
+    laravel + contacto
