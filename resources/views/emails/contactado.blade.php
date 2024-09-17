@@ -1,2 +1,4 @@
-<h1>Mensaje Recibido</h1>
-<p>Hola {{$nombre}}, tu mensaje ha sido recibido, pronto se contactará contigo un asesor VIP</p>
+<h1>{{ __('mail.greeting', ['name' => $nombre]) }}</h1>
+<p>{{ $cuerpo }}</p>
+<p>{{ $despedida }}</p>
+<p>{{ $firma }}</p>

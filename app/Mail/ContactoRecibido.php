@@ -16,37 +16,34 @@ class ContactoRecibido extends Mailable
 
     private $contacto;
 
-    /**
-     * Create a new message instance.
-     */
     public function __construct($contacto)
     {
         $this->contacto = $contacto;
     }
 
-    /**
-     * Get the message envelope.
-     */
     public function envelope(): Envelope
     {
         return new Envelope(
-            from: new Address('progra4-2024@umes.incodemode.com', 'Formulario de Contacto'),
+            from: new Address('progra4-2024@umes.incodemode.com', __('mail.signature', ['app_name' => config('app.name')])),
             to: [new Address($this->contacto['email'], $this->contacto['nombre'])],
             replyTo: [new Address('barqueromauricio@umes.edu.gt', 'Luis')],
-            subject: 'Contacto Recibido'
+            subject: __('mail.success_message')
         );
     }
-
-    /**
-     * Get the message content definition.
-     */
+    
     public function content(): Content
     {
         return new Content(
             view: 'emails.contactado',
-            with: $this->contacto,
+            with: [
+                'nombre' => $this->contacto['nombre'],
+                'cuerpo' => __('mail.body'),
+                'despedida' => __('mail.farewell'),
+                'firma' => __('mail.signature', ['app_name' => config('app.name')]),
+            ],
         );
     }
+    
 
     /**
      * Get the attachments for the message.
