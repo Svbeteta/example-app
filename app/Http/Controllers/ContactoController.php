@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Mail\ContactoRecibido;
 use Illuminate\Support\Facades\Mail;
+use App\Models\Contact;
 
 class ContactoController extends Controller
 {
@@ -18,10 +19,15 @@ class ContactoController extends Controller
         $request->validate([
             'nombre' => 'required|max:255',
             'email' => 'required|email',
-            'mensaje' => 'required',
+            'mensaje' => 'required'
         ]);
 
-        Mail::send(new ContactoRecibido($request->input()));
+        $input = $request->input();
+        $input['publicidad'] = isset($input['publicidad']); 
+
+        Contact::create($input);
+
+        Mail::send(new ContactoRecibido($input));
 
         return redirect(route('contactado'))->with('success', 'Tu mensaje ha sido enviado exitosamente.');
     }
@@ -30,4 +36,11 @@ class ContactoController extends Controller
     {
         return view('mis-views.contactado');
     }
+
+    public function contacts()
+    {
+    $contactos = Contact::orderBy('created_at', 'desc')->get();  
+    return view('mis-views.contactos', compact('contactos'));
+    }
+
 }

@@ -9,7 +9,7 @@ Route::get('/', function () {
 });
 
 use App\Http\Controllers\PrimerController;
-//Route::get('/mi-primer-controller', [PrimerController::class, 'index']);
+
 Route::any('/mi-primer-controller/{texto?}', [PrimerController::class, 'show'])
 ->where(['texto' => '[a-z0-9-]+'])
 ->name('mi-controller');
@@ -20,5 +20,9 @@ Route::get('/contacto', [ContactoController::class, 'index']);
 Route::post('/contacto', [ContactoController::class, 'send']);
 Route::get('/contactado', [ContactoController::class, 'contacted'])->name('contactado');
 
+Route::get('/productos', function () {
+    return view('mis-views.products');
+});
 
+Route::get('/contactos', [ContactoController::class, 'contacts'])->name('contactos.index');
 
