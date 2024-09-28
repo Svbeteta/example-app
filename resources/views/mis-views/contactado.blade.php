@@ -1,4 +1,4 @@
-@extends('my-layouts.my-app-layout')
+@extends('my-layouts.products')
 
 @section('content')
     <h1>Gracias por Contactar</h1>

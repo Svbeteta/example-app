@@ -4,15 +4,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mi Tienda - Productos</title>
-    <link rel="stylesheet" href="{{ asset('styles.css') }}">
+    <title>Joystick Junction</title>
+    <link rel="icon" href="/images/joystick.png" type="image/png">
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
-        <h1>Mi Tienda</h1>
+        <h1>Joystick Junction</h1>
         <nav>
             <ul>
-                <li><a href="/">Inicio</a></li>
+                <li><a href="/inicio">Inicio</a></li>
                 <li><a href="/productos">Productos</a></li>
                 <li><a href="/contacto">Contacto</a></li>
             </ul>
@@ -24,7 +25,7 @@
     </main>
 
     <footer>
-        <p>&copy; 2024 Mi Tienda</p>
+        <p>&copy; 2024 - Joystick Junction </p>
     </footer>
 </body>
 </html>
